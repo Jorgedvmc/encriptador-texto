@@ -1,0 +1,139 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eef2f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-section, .output-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.input-section {
+    border-right: 1px solid #ccc;
+}
+
+.input-section h1 {
+    color: #3b3f5c;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn-encrypt {
+    background-color: #dc570f;
+    color: white;
+}
+
+.btn-encrypt:hover {
+    background-color: #dc570f;
+}
+
+.btn-decrypt {
+    background-color: #dc570f;
+    color: white;
+}
+
+.btn-decrypt:hover {
+    background-color: #dc570f;
+}
+
+.btn-copy {
+    background-color: #dc570f;
+    color: white;
+    margin-top: 10px;
+}
+
+.btn-copy:hover {
+    background-color: #dc570f;
+}
+
+.output-section img {
+    max-width: 100%;
+}
+
+.output-section p {
+    color: #888;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #3b3f5c;
+    color: white;
+    width: 100%;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .input-section {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .output-section img {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    textarea {
+        height: 100px;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
